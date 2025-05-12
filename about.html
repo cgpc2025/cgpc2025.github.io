@@ -682,30 +682,32 @@
      </div>
      
      <style>
-     /* 新增样式 */
-     .image-container {
-         display: flex;                /* 启用弹性布局 */
-         justify-content: space-around; /* 均匀分布子元素 */
-         align-items: center;          /* 垂直居中 */
-         gap: 20px;                    /* 元素间距 */
-     }
-     
-     .image-box {
-         flex: 1;                      /* 等分剩余空间 */
-         text-align: center;           /* 内容水平居中 */
-         max-width: 30%;               /* 控制最大宽度 */
-     }
-     
-     .image-box img {
-         max-width: 80px;             /* 控制图片大小 */
-         height: auto;                /* 保持比例 */
-         margin: 0 auto;              /* 图片水平居中 */
-     }
-     
-     .dolor_text {
-         margin-top: 10px;            /* 文字与图片间距 */
-     }
-     </style>
+      .image-container {
+          display: flex;
+          justify-content: center;    /* 改为居中布局 */
+          align-items: center;
+          gap: 10px;                 /* 间距从20px减小到10px */
+      }
+      
+      .image-box {
+          flex: 1;
+          text-align: center;
+          min-width: 200px;          /* 增加最小宽度 */
+          padding: 0 15px;           /* 增加内边距 */
+      }
+      
+      .image-box img {
+          max-width: 120px;          /* 图片宽度从80px增大到120px */
+          width: 100%;               /* 新增响应式宽度 */
+          height: auto;
+          margin: 0 auto;
+      }
+      
+      .dolor_text {
+          margin-top: 15px;          /* 增大文字间距 */
+          font-size: 16px;           /* 可选：增大文字字号 */
+      }
+      </style>
       
       
       <script src="js/jquery.min.js"></script>
